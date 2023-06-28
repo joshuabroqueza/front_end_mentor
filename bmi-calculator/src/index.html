@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <title>
+      BMI CALCULATOR
+    </title>
+  </head>
+  <body>
+    <div class="h-screen">
+      <div
+        class="page_one_container flex flex-col items-center justify-center bg-gradient-to-b from-cyan-50 to-blue-200 rounded-3xl shadow-lg"
+      >
+        <div class="h-10 m-7">
+          <img class="h-10" src="../assets/images/bmi.png" alt="bmi_icon" />
+        </div>
+        <h1 class="font-bold text-5xl text-center text-slate-800 my-4">
+          Body Mass <br />
+          Index <br />
+          Calculator
+        </h1>
+        <p
+          class="text-center font-semibold text-lg text-slate-500 my-2 p-6 mb-36"
+        >
+          Better understand your weight in relation to your hegiht using our
+          body mass index (BM) calculator. While BMI is not the sole determinant
+          of a healthy weight, it offers a valuable starting point to evaluate
+          your overall health and well-being.
+        </p>
+      </div>
+      <div class="form_container border rounded-3xl m-6 p-5 drop-shadow-lg">
+        <h1 class="font-semibold my-2 text-2xl">Enter your details below</h1>
+
+        <div
+          class="flex flex-row justify-between outline h-10 items-center px-6"
+        >
+          <div class="text-lg font-semibold">
+            <input type="radio" id="metric" />
+            <label class="mx-3" for="metric">Metric</label>
+          </div>
+          <div class="text-lg font-semibold">
+            <input type="radio" id="imperial" />
+            <label class="mx-3" for="imperial">Imperial</label>
+          </div>
+        </div>
+        <div>
+          <div>
+            <label for="Height">Height</label>
+            <input type="number" placeholder="0" />
+          </div>
+          <div>
+            <label for="weight">Weight</label>
+            <input type="number" placeholder="0" />
+          </div>
+        </div>
+        <div
+          class="result_container bg-gradient-to-r from-sky-500 to-indigo-500"
+        >
+          <h3>Your BMI is...</h3>
+          <h1>0</h1>
+          <p>
+            Your BMI suggests you're a healthy weight. Your ideal weight is
+            between 63.3kgs - 85.2kgs
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
