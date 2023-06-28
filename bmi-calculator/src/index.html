@@ -33,7 +33,9 @@
           your overall health and well-being.
         </p>
       </div>
-      <div class="form_container border rounded-3xl m-6 p-5 drop-shadow-lg">
+      <div
+        class="form_container border h-[90vh] rounded-3xl m-6 p-5 drop-shadow-lg"
+      >
         <h1 class="font-semibold my-2 text-2xl">Enter your details below</h1>
 
         <div
@@ -48,17 +50,32 @@
             <label class="mx-3" for="imperial">Imperial</label>
           </div>
         </div>
-        <div>
-          <div>
+
+        <div class="">
+          <div class="">
             <label for="Height">Height</label>
-            <input type="number" placeholder="0" />
+            <div
+              class="border rounded-lg flex justify-between items-center p-6 my-2"
+            >
+              <input
+                class="outline-none border-none w-10"
+                type="number"
+                placeholder="0"
+              />
+              <span>cm</span>
+            </div>
           </div>
-          <div>
-            <label for="weight">Weight</label>
-            <input type="number" placeholder="0" />
+          <div class="">
+            <label for="Height">Weight</label>
+            <div
+              class="border rounded-lg flex justify-between  items-center p-6 my-2"
+            >
+              <input type="number" placeholder="0" />
+              <span>cm</span>
+            </div>
           </div>
         </div>
-        <div
+        <!-- <div
           class="result_container bg-gradient-to-r from-sky-500 to-indigo-500"
         >
           <h3>Your BMI is...</h3>
@@ -67,7 +84,7 @@
             Your BMI suggests you're a healthy weight. Your ideal weight is
             between 63.3kgs - 85.2kgs
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
