@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="../dist/output.css" />
 
     <title>
@@ -12,10 +12,8 @@
     </title>
   </head>
   <body>
-    <div class="h-screen">
-      <div
-        class="page_one_container flex flex-col items-center justify-center bg-gradient-to-b from-cyan-50 to-blue-200 rounded-3xl shadow-lg"
-      >
+    <body>
+      <div class="page_one_container mb-5 flex flex-col items-center justify-center bg-gradient-to-b from-cyan-50 to-blue-200 min-h-[90vh] rounded-3xl shadow-lg">
         <div class="h-10 m-7">
           <img class="h-10" src="../assets/images/bmi.png" alt="bmi_icon" />
         </div>
@@ -24,68 +22,224 @@
           Index <br />
           Calculator
         </h1>
-        <p
-          class="text-center font-semibold text-lg text-slate-500 my-2 p-6 mb-36"
-        >
-          Better understand your weight in relation to your hegiht using our
-          body mass index (BM) calculator. While BMI is not the sole determinant
-          of a healthy weight, it offers a valuable starting point to evaluate
-          your overall health and well-being.
+        <p class="text-center font-semibold text-lg text-slate-500 my-2 p-6">
+          Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
+        </p>
+        <div class="flex-1"></div> <!-- Added div to create space for the form -->
+        <div class="form_container flex-grow-0 flex-shrink-0 mx-6 my-4 p-4 drop-shadow-md bg-white rounded-2xl">
+          <!-- form content -->
+          <h1 class="font-semibold my-2 text-2xl">Enter your details below</h1>
+          <div class="flex flex-row justify-between h-10 items-center px-6">
+            <div class="text-lg font-semibold">
+              <input type="radio" id="metric" />
+              <label class="mx-3" for="metric">Metric</label>
+            </div>
+            <div class="text-lg font-semibold">
+              <input type="radio" id="imperial" />
+              <label class="mx-3" for="imperial">Imperial</label>
+            </div>
+          </div>
+
+          <div class="my-4">
+            <div class="">
+              <label for="Height" class="text-slate-500 font-semibold"
+                >Height</label
+              >
+              <div
+                class="border rounded-lg flex justify-between items-center py-3 px-6 my-2"
+              >
+                <input
+                  class="outline-none border-none bg-white  font-bold text-2xl w-20"
+                  type="number"
+                  placeholder="0"
+                />
+                <span class="text-blue-700 font-bold text-2xl">cm</span>
+              </div>
+            </div>
+            <div class="">
+              <label for="Weight" class="text-slate-500 font-semibold"
+                >Weight</label
+              >
+              <div
+                class="border rounded-lg flex justify-between items-center py-3 px-6 my-2"
+              >
+                <input
+                  class="outline-none border-none bg-white font-bold text-2xl w-20"
+                  type="number"
+                  placeholder="0"
+                />
+                <span class="text-blue-700 font-bold text-2xl">cm</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+        class="result_container bg-gradient-to-r from-sky-500 to-indigo-500 p-7 rounded-xl"
+      >
+        <h3 class="text-xl text-white my-3">Your BMI is...</h3>
+        <h1 class="text-3xl text-white my-3 font-bold">24.6</h1>
+        <p class="text-[15px] text-white my-3">
+          Your BMI suggests you're a healthy weight. Your ideal weight is
+          between 63.3kgs - 85.2kgs
         </p>
       </div>
-      <div
-        class="form_container border h-[90vh] rounded-3xl m-6 p-5 drop-shadow-lg"
-      >
-        <h1 class="font-semibold my-2 text-2xl">Enter your details below</h1>
-
-        <div
-          class="flex flex-row justify-between outline h-10 items-center px-6"
-        >
-          <div class="text-lg font-semibold">
-            <input type="radio" id="metric" />
-            <label class="mx-3" for="metric">Metric</label>
-          </div>
-          <div class="text-lg font-semibold">
-            <input type="radio" id="imperial" />
-            <label class="mx-3" for="imperial">Imperial</label>
-          </div>
-        </div>
-
-        <div class="">
-          <div class="">
-            <label for="Height">Height</label>
-            <div
-              class="border rounded-lg flex justify-between items-center p-6 my-2"
-            >
-              <input
-                class="outline-none border-none w-10"
-                type="number"
-                placeholder="0"
-              />
-              <span>cm</span>
-            </div>
-          </div>
-          <div class="">
-            <label for="Height">Weight</label>
-            <div
-              class="border rounded-lg flex justify-between  items-center p-6 my-2"
-            >
-              <input type="number" placeholder="0" />
-              <span>cm</span>
-            </div>
-          </div>
-        </div>
-        <!-- <div
-          class="result_container bg-gradient-to-r from-sky-500 to-indigo-500"
-        >
-          <h3>Your BMI is...</h3>
-          <h1>0</h1>
-          <p>
-            Your BMI suggests you're a healthy weight. Your ideal weight is
-            between 63.3kgs - 85.2kgs
-          </p>
-        </div> -->
       </div>
     </div>
-  </body>
+      <!-- SEOCND PAGE -->
+      <div class="second_page h-[90vh] w-screen flex flex-col flex-grow items-center bg-white">
+          <div>
+            <img src="../assets/images/guy_eating.png" alt="">
+          </div>
+         
+          <div class="w-full p-6">
+            <h1 class="text-3xl font-bold my-3">What your BMI result means</h1>
+            <p class="text-slate-600">A healthy BMI range is considered to be between 18.5 to 24.9. This range indicates that the weight of an individual is within a healthy range for their height. It is important to maintain a healthy weight as it can contribute to a better quality of life and reduce the risk of various health conditions such as heart disease, stroke and diabetes. To maintain a healthy weight, it is recommended to follow a balanced diet and engage in regular physical activity. Moreover, a healthy weight is not just about looking good, but it is also necessary for optimal physical and mental well-being.</p>
+          </div>
+      </div>
+      <!-- THIRD PAGE -->
+      <div class="third_page h-screen drop-shadow-md shadow-md flex flex-col items-center justify-center bg-gradient-to-t from-cyan-50 to-blue-100">
+        <div class="p-5 m-2">
+          <img class="h-12 border border-red-300 bg-red-300 rounded-full p-2 m-2" src="../assets/images/salad.png" alt="salad">
+          <h1 class="text-xl font-bold my-4">Healthy Eating</h1>
+          <p class="text-slate-500 font-medium">Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and modd.</p>
+        </div>
+
+        <div class="p-5 m-2">
+          <img class="h-12 border border-yellow-100 bg-yellow-100  rounded-full p-2 m-2" src="../assets/images/barbel.png" alt="salad">
+          <h1 class="text-xl font-bold my-4">Regular Exercise</h1>
+          <p class="text-slate-500 font-medium">Exercise improves fitness, aids weight control, elevates mood, and reduces disease risk, fostering wellness and longevity.</p>
+        </div>
+
+        <div class="p-5 m-2">
+          <img class="h-12 border border-green-100 bg-green-100 rounded-full p-2 m-2" src="../assets/images/sleeping.png" alt="salad">
+          <h1 class="text-xl font-bold my-4">Adequate Sleep</h1>
+          <p class="text-slate-500 font-medium">Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation.</p>
+        </div>
+      </div>
+
+      <!-- FOURTH PAGE -->
+      <div class="third_page drop-shadow-md shadow-md flex flex-col items-center bg-gradient-to-b from-white to-blue-100">
+        <h1 class="font-bold text-3xl text-center text-slate-800 my-4 drop-shadow-lg mt-10 ">Limitations of BMI</h1>
+        <p class="text-slate-600 p-6">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not beneficial to use.</p>
+
+        <div class="border p-5 m-5 rounded-lg drop-shadow-md shadow-md bg-white">
+          <div class="flex flex-row py-5">
+            <div>
+              <img class="h-8 mr-5" src="../assets/images/equality.png" alt="equality">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 drop-shadow-md">Gender</h3>
+          </div>
+          <p class="text-slate-600 font-medium">The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.</p>
+        </div>
+        <div class="border p-5 m-5 rounded-lg drop-shadow-md shadow-md bg-white">
+          <div class="flex flex-row py-5">
+            <div>
+              <img class="h-8 mr-5" src="../assets/images/birthday-cake.png" alt="equality">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 drop-shadow-md">Age</h3>
+          </div>
+          <p class="text-slate-600 font-medium">In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</p>
+        </div>
+        <div class="border p-5 m-5 rounded-lg drop-shadow-md shadow-md bg-white">
+            <div class="flex flex-row py-5">
+              <div>
+                <img class="h-8 mr-5" src="../assets/images/baby-boy.png" alt="equality">
+              </div>
+              <h3 class="text-2xl font-bold text-slate-900 drop-shadow-md">Pregnancy</h3>
+            </div>
+            <p class="text-slate-600 font-medium">Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.</p>
+        </div> 
+        <div class="border p-5 m-5 mb-20 rounded-lg drop-shadow-md shadow-md bg-white">
+                <div class="flex flex-row py-5">
+                  <div>
+                    <img class="h-8 mr-5" src="../assets/images/people.png" alt="people">
+                  </div>
+                  <h3 class="text-2xl font-bold text-slate-900 drop-shadow-md">Race</h3>
+                </div>
+                <p class="text-slate-600 font-medium">Certain health concerns may effect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.</p>
+        </div>
+      </div>
+    </body>
 </html>
+
+<!-- <div
+class="page_one_container flex flex-col items-center justify-center bg-gradient-to-b from-cyan-50 to-blue-200 rounded-3xl shadow-lg"
+>
+<div class="h-10 m-7">
+  <img class="h-10" src="../assets/images/bmi.png" alt="bmi_icon" />
+</div>
+<h1 class="font-bold text-5xl text-center text-slate-800 my-4">
+  Body Mass <br />
+  Index <br />
+  Calculator
+</h1>
+<p
+  class="text-center font-semibold text-lg text-slate-500 my-2 p-6 mb-36"
+>
+  Better understand your weight in relation to your hegiht using our
+  body mass index (BM) calculator. While BMI is not the sole determinant
+  of a healthy weight, it offers a valuable starting point to evaluate
+  your overall health and well-being.
+</p>
+</div>
+
+ <div
+class="form_container border rounded-3xl m-6 p-5 bg-white drop-shadow-lg"
+>
+<h1 class="font-semibold my-2 text-2xl">Enter your details below</h1>
+
+<div class="flex flex-row justify-between h-10 items-center px-6">
+  <div class="text-lg font-semibold">
+    <input type="radio" id="metric" />
+    <label class="mx-3" for="metric">Metric</label>
+  </div>
+  <div class="text-lg font-semibold">
+    <input type="radio" id="imperial" />
+    <label class="mx-3" for="imperial">Imperial</label>
+  </div>
+</div>
+
+
+<div class="my-4">
+  <div class="">
+    <label for="Height" class="text-slate-500 font-semibold"
+      >Height</label
+    >
+    <div
+      class="border rounded-lg flex justify-between items-center py-3 px-6 my-2"
+    >
+      <input
+        class="outline-none border-none bg-white  font-bold text-2xl w-20"
+        type="number"
+        placeholder="0"
+      />
+      <span class="text-blue-700 font-bold text-2xl">cm</span>
+    </div>
+  </div>
+  <div class="">
+    <label for="Weight" class="text-slate-500 font-semibold"
+      >Weight</label
+    >
+    <div
+      class="border rounded-lg flex justify-between items-center py-3 px-6 my-2"
+    >
+      <input
+        class="outline-none border-none bg-white font-bold text-2xl w-20"
+        type="number"
+        placeholder="0"
+      />
+      <span class="text-blue-700 font-bold text-2xl">cm</span>
+    </div>
+  </div>
+</div>
+<div
+  class="result_container bg-gradient-to-r from-sky-500 to-indigo-500 p-7 rounded-xl"
+>
+  <h3 class="text-xl text-white my-3">Your BMI is...</h3>
+  <h1 class="text-3xl text-white my-3 font-bold">24.6</h1>
+  <p class="text-[15px] text-white my-3">
+    Your BMI suggests you're a healthy weight. Your ideal weight is
+    between 63.3kgs - 85.2kgs
+  </p>
+</div>
+</div> -->
