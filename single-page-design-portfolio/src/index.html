@@ -15,10 +15,10 @@
     <title>Frontend Mentor | Single-page design portfolio</title>
   </head>
   <body class="bg-[#FFF7F0]">
-    <header class="flex flex-row justify-between m-5">
+    <header class="flex flex-row justify-between m-5 lg:mx-20">
       <img src="./assets/logo.svg" alt="" />
       <div
-        class="w-[176px] bg-black text-white rounded-full flex justify-center items-center active:bg-[#5537ca]"
+        class="w-[176px] bg-black text-white rounded-full flex justify-center items-center shadow-md hover:shadow-xl active:scale-90 transition duration-150 active:bg-[#5537ca]"
       >
         Free Consulation
       </div>
@@ -31,93 +31,186 @@
       </p>
     </section>
     <section>
-      <div class="md-container flex justify-between">
-        <div class="section-child md:flex-grow outline">
-          <div
-            class="bg-[#755CDE] rounded h-[343px] p-5 flex flex-col justify-between m-4"
-          >
-            <div class="flex justify-end">
-              <img
-                src="./assets/pattern-graphic-design.svg"
-                alt="graphic_design"
-              />
+      <div class="lg-container lg:flex-row lg:flex lg:px-16">
+        <div
+          class="md-container flex flex-col md:flex-row justify-between flex-grow"
+        >
+          <div class="section-child md:flex-grow">
+            <div
+              class="bg-[#755CDE] shadow-md drop-shadow-md rounded md:h-[395px] md:flex-grow p-5 flex flex-col justify-between m-4"
+            >
+              <div class="flex justify-end">
+                <img
+                  src="./assets/pattern-graphic-design.svg"
+                  alt="graphic_design"
+                />
+              </div>
+              <p class="text-white font-bold text-[24px]">Graphic Design</p>
             </div>
-            <p class="text-white font-bold text-[24px]">Graphic Design</p>
+          </div>
+          <div class="section-child md:flex-grow">
+            <div class="flex justify-evenly">
+              <div
+                class="bg-[#F6A560] shadow-md drop-shadow-md rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
+              >
+                <div class="flex justify-end">
+                  <img src="./assets/pattern-ui-ux.svg" alt="" />
+                </div>
+                <p class="text-white font-bold text-[24px]">UI/UX</p>
+              </div>
+              <div
+                class="bg-[#F39E9E] shadow-md drop-shadow-md rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
+              >
+                <div class="flex justify-end">
+                  <img src="./assets/pattern-apps.svg" alt="" />
+                </div>
+                <p class="text-white font-bold text-[24px]">Apps</p>
+              </div>
+            </div>
+            <div>
+              <div
+                class="bg-[#EB7565] shadow-md drop-shadow-md rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
+              >
+                <div class="flex justify-end">
+                  <img src="./assets/pattern-illustrations.svg" alt="" />
+                </div>
+                <p class="text-white font-bold text-[24px]">Illustrations</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="section-child md:flex-grow">
-          <div class="flex justify-evenly">
-            <div
-              class="bg-[#F6A560] rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
-            >
-              <div class="flex justify-end">
-                <img src="./assets/pattern-ui-ux.svg" alt="" />
-              </div>
-              <p class="text-white font-bold text-[24px]">UI/UX</p>
-            </div>
-            <div
-              class="bg-[#F39E9E] rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
-            >
-              <div class="flex justify-end">
-                <img src="./assets/pattern-apps.svg" alt="" />
-              </div>
-              <p class="text-white font-bold text-[24px]">Apps</p>
-            </div>
-          </div>
-          <div>
-            <div
-              class="bg-[#EB7565] rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
-            >
-              <div class="flex justify-end">
-                <img src="./assets/pattern-illustrations.svg" alt="" />
-              </div>
-              <p class="text-white font-bold text-[24px]">Illustrations</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="md-container">
-        <div class="section-child md:flex md:flex-row">
+        <div class="md-container lg:w-[354px]">
           <div
-            class="bg-[#61C4B7] rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
+            class="section-child md:flex md:flex-row lg:flex-col lg:flex-grow"
           >
-            <div class="flex justify-end">
-              <img src="./assets/pattern-photography.svg" alt="" />
+            <div
+              class="bg-[#61C4B7] shadow-md drop-shadow-md rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
+            >
+              <div class="flex justify-end">
+                <img src="./assets/pattern-photography.svg" alt="" />
+              </div>
+              <p class="text-white font-bold text-[24px]">Photography</p>
             </div>
-            <p class="text-white font-bold text-[24px]">Photography</p>
-          </div>
-          <div
-            class="bg-[#552049] rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
-          >
-            <div class="flex justify-end">
-              <img src="./assets/pattern-motion-graphics.svg" alt="" />
+            <div
+              class="bg-[#552049] shadow-md drop-shadow-md rounded h-[182px] flex-grow p-5 flex flex-col justify-between m-4"
+            >
+              <div class="flex justify-end">
+                <img src="./assets/pattern-motion-graphics.svg" alt="" />
+              </div>
+              <p class="text-white font-bold text-[24px]">Motion Graphics</p>
             </div>
-            <p class="text-white font-bold text-[24px]">Motion Graphics</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <img src="./assets/favicon-32x32.png" alt="" />
-    <img src="./assets/pattern-apps.svg" alt="" />
-    <img src="./assets/pattern-illustrations.svg" alt="" />
-    <img src="./assets/pattern-motion-graphics.svg" alt="" />
-    <img src="./assets/pattern-photography.svg" alt="" />
-    <img src="./assets/pattern-ui-ux.svg" alt="" /> -->
+    <!-- profile section -->
+    <section class="flex flex-col items-center md:grid md:grid-cols-2">
+      <img class="m-2 p-8" src="./assets/image-amy.webp" alt="profile_amy" />
+      <div class="flex flex-col items-center">
+        <h1 class="m-2 p-4 font-bold text-3xl text-center">
+          I’m Amy, and I’d love to work on your next project
+        </h1>
+        <p class="m-2 p-4 text-[16px] text-center text-slate-500">
+          I love working with others to create beautiful design solutions. I’ve
+          designed everything from brand illustrations to complete mobile apps.
+          I’m also handy with a camera!
+        </p>
+        <button
+          class="m-2 px-6 py-3 bg-[#EB7565] rounded-full text-white text-sm active:bg-[#F6A560] shadow-md hover:shadow-xl active:scale-90 transition duration-150"
+        >
+          Free Consultation
+        </button>
+      </div>
+    </section>
+
+    <!-- my work section -->
+    <section class="flex items-center flex-col mt-12">
+      <h1 class="text-2xl font-semibold p-3">My Work</h1>
+      <div class="work_container">
+        <div class="project_list p-4">
+          <img
+            id="slideImage"
+            class="rounded-xl"
+            src="./assets/image-slide-3.jpg"
+            alt="work_1"
+          />
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <button
+          id="prevButton"
+          class="h-[64px] w-[64px] m-2 flex items-center justify-center bg-black rounded-full active:bg-[#755CDE] shadow-md hover:shadow-xl active:scale-90 transition duration-150"
+        >
+          <img src="./assets/icon-arrow-left.svg" alt="icon-arrow-left" />
+        </button>
+        <button
+          id="nextButton"
+          class="h-[64px] w-[64px] m-2 flex items-center justify-center bg-black rounded-full  active:bg-[#755CDE] shadow-md hover:shadow-xl active:scale-90 transition duration-150"
+        >
+          <img src="./assets/icon-arrow-right.svg" alt="icon-arrow-right" />
+        </button>
+      </div>
+    </section>
+
+    <!-- book me section -->
+    <section
+      class="flex items-center flex-col bg-black m-4 py-10 px-2 md:mx-10 rounded-lg lg:flex-row lg:mx-20"
+    >
+      <div class="flex flex-col justify-center items-center lg:items-start">
+        <h1 class="text-white text-3xl my-4 lg:px-10">Book a call with me</h1>
+        <p class="text-white text-center p-2 m-2 md:px-10 lg:text-start">
+          I’d love to have a chat to see how I can help you. The best first step
+          is for us to discuss your project during a free consultation. Then we
+          can move forward from there.
+        </p>
+      </div>
+
+      <button
+        class="m-2 px-6 py-3 bg-[#EB7565] rounded-full text-white text-sm active:bg-[#F6A560] drop-shadow-sm lg:w-[368px] shadow-md hover:shadow-xl active:scale-90 transition duration-150"
+      >
+        Free Consultation
+      </button>
+    </section>
+
+    <!-- footer section -->
+    <footer class="flex flex-row justify-between md:mx-10 mx-5 lg:mx-20 my-10">
+      <img src="./assets/logo.svg" alt="" />
+      <diva
+        class="w-[176px] bg-black text-white rounded-full flex justify-center shadow-md items-center  active:bg-[#755CDE] hover:shadow-xl active:scale-90 transition duration-150"
+      >
+        Free Consulation
+      </diva>
+    </footer>
+
+    <script>
+      const images = [
+        "./assets/image-slide-1.jpg",
+        "./assets/image-slide-2.jpg",
+        "./assets/image-slide-3.jpg",
+        // Add more image URLs here
+      ];
+
+      let currentImageIndex = 0;
+      const slideImage = document.getElementById("slideImage");
+      const prevButton = document.getElementById("prevButton");
+      const nextButton = document.getElementById("nextButton");
+
+      prevButton.addEventListener("click", showPreviousImage);
+      nextButton.addEventListener("click", showNextImage);
+
+      function showPreviousImage() {
+        currentImageIndex =
+          (currentImageIndex - 1 + images.length) % images.length;
+        slideImage.src = images[currentImageIndex];
+      }
+
+      function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        slideImage.src = images[currentImageIndex];
+      }
+    </script>
   </body>
 </html>
 <!-- 
 
-<body class="bg-[#FFF7F0]">
-  <h1 class="underline">hello</h1>
-  Free Consultation Design solutions made easy With over ten years of
-  experience in various design disciplines, I’m your one-stop shop for your
-  design needs. Graphic Design UI/UX Apps Photography Illustrations Motion
-  Graphics I’m Amy, and I’d love to work on your next project I love working
-  with others to create beautiful design solutions. I’ve designed everything
-  from brand illustrations to complete mobile apps. I’m also handy with a
-  camera! Free Consultation My Work Book a call with me I’d love to have a
-  chat to see how I can help you. The best first step is for us to discuss
-  your project during a free consultation. Then we can move forward from
-  there. Free Consultation Free Consultation
-</body> -->
